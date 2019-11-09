@@ -34,13 +34,13 @@ plv8.install({modulePath:require.resolve('lodash'),moduleName:"lodash"})
   })
   
 
-  plv8.install({modulePath:require.resolve("./login"),moduleName:"login"})
+  plv8.install({modulePath:require.resolve("shortid"),moduleName:"shortid"})
   .then(() => {
  
     // eval some code
     return plv8.eval(() => {
-      const login = require('login')
-      return login
+      const shortid = require('shortid')
+      return shortid.generate()
     })
   })
   .then(result => {
