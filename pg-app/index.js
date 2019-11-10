@@ -6,7 +6,9 @@ const knex = require('knex')({
     user: 'postgres',
     password: 'dalong',
     database: 'postgres'
-  }
+  },
+  // use connect pool for more connects default max is  7
+  pool: { min: 0, max: 80 }
 });
 
 /**
