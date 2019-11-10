@@ -10,7 +10,7 @@ const knex = require('knex')({
 });
 
 /**
- *  
+ *   you can use ALTER DATABASE postgres SET "plv8.start_proc" TO "v8.plv8_init"; for db session config
  * dalong4  function  test
  * shorid module with 
  *  
@@ -25,15 +25,12 @@ LANGUAGE plv8;
  */
 
 // test 1000000 for get shortid
-for (let index = 0; index < 50000; index++) {
-  knex.raw(`SET plv8.start_proc = 'v8.plv8_init';`).then(() => {
-    const results2 = knex.select(knex.raw(`
+for (let index = 0; index < 100000; index++) {
+  const results2 = knex.select(knex.raw(`
     dalong4();`))
-    results2.map(columes => {
-      console.log(columes)
-    }).catch(err => {
-      console.log(err)
-    })
-  }
-  )
+  results2.map(columes => {
+    console.log(columes)
+  }).catch(err => {
+    console.log(err)
+  })
 }
