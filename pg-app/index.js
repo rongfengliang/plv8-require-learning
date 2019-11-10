@@ -27,12 +27,29 @@ LANGUAGE plv8;
  */
 
 // test 1000000 for get shortid
-for (let index = 0; index < 100000; index++) {
-  const results2 = knex.select(knex.raw(`
-    dalong4();`))
-  results2.map(columes => {
-    console.log(columes)
-  }).catch(err => {
-    console.log(err)
-  })
+
+function querytest() {
+  for (let index = 0; index < 100000; index++) {
+    const results2 = knex.select(knex.raw(`
+      dalong4();`))
+    results2.map(columes => {
+      console.log(columes)
+    }).catch(err => {
+      console.log(err)
+    })
+  }
 }
+
+
+function insertshortid() {
+  for (let index = 0; index < 50000; index++) {
+    let result = knex.raw("insert into shortids(shortid) values(shortid());");
+    result.then(data=>{
+      console.log(data)
+    }).catch(err=>{
+      console.log(err)
+    })
+  }
+}
+
+insertshortid()
