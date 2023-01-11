@@ -6,7 +6,7 @@
   "license": "MIT",
   "dependencies": {
     "cuid": "^2.1.6",
-    "knex": "^0.20.1",
+    "knex": "^2.4.0",
     "lodash": "^4.17.15",
     "pg": "^7.12.1",
     "plv8": "^2.1.4",
