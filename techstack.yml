@@ -1,0 +1,157 @@
+repo_name: rongfengliang/plv8-require-learning
+report_id: d72393a8e1213524c2db422416430a67
+version: 0.1
+repo_type: Public
+timestamp: '2024-01-31T08:01:55+00:00'
+requested_by: rongfengliang
+provider: github
+branch: master
+detected_tools_count: 11
+tools:
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/rongfengliang/plv8-require-learning
+  detection_source: Repo Metadata
+- name: PostgreSQL
+  description: A powerful, open source object-relational database system
+  website_url: http://www.postgresql.org/
+  open_source: true
+  hosted_saas: false
+  category: Data Stores
+  sub_category: Databases
+  image_url: https://img.stackshare.io/service/1028/ASOhU5xJ.png
+  detection_source_url: https://github.com/rongfengliang/plv8-require-learning/blob/master/docker-compose.yaml
+  detection_source: docker-compose.yaml
+  last_updated_by: rongfengliang
+  last_updated_on: 2019-11-09 11:28:40.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/rongfengliang/plv8-require-learning
+  detection_source: Repo Metadata
+- name: Yarn
+  description: A new package manager for JavaScript
+  website_url: https://yarnpkg.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/5848/44mC-kJ3.jpg
+  detection_source_url: https://github.com/rongfengliang/plv8-require-learning/blob/master/node-plv8/yarn.lock
+  detection_source: node-plv8/yarn.lock
+  last_updated_by: rongfengliang
+  last_updated_on: 2019-11-09 11:28:40.000000000 Z
+- name: npm
+  description: The package manager for JavaScript.
+  website_url: https://www.npmjs.com/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/rongfengliang/plv8-require-learning/blob/master/node-plv8/package.json
+  detection_source: node-plv8/package.json
+  last_updated_by: rongfengliang
+  last_updated_on: 2019-11-09 11:28:40.000000000 Z
+- name: Lodash
+  description: A JavaScript utility library
+  website_url: https://lodash.com
+  version: 4.17.15
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript Utilities & Libraries
+  image_url: https://img.stackshare.io/service/2438/lodash.png
+  detection_source_url: https://github.com/rongfengliang/plv8-require-learning/blob/master/node-plv8/yarn.lock
+  detection_source: node-plv8/package.json
+  last_updated_by: rongfengliang
+  last_updated_on: 2019-11-09 11:28:40.000000000 Z
+- name: cuid
+  description: Collision-resistant ids optimized for horizontal scaling and performance
+  package_url: https://www.npmjs.com/cuid
+  version: 2.1.6
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17189/default_183829c5079b84333a720d8590a328efc043ba0e.png
+  detection_source_url: https://github.com/rongfengliang/plv8-require-learning/blob/master/node-plv8/yarn.lock
+  detection_source: node-plv8/package.json
+  last_updated_by: rongfengliang
+  last_updated_on: 2019-11-09 11:28:40.000000000 Z
+- name: knex
+  description: A batteries-included SQL query &amp; schema builder for Postgres
+  package_url: https://www.npmjs.com/knex
+  version: 0.20.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16491/default_fc6e1fc17e404d936593b5b901d67abb3386daa3.png
+  detection_source_url: https://github.com/rongfengliang/plv8-require-learning/blob/master/node-plv8/yarn.lock
+  detection_source: node-plv8/package.json
+  last_updated_by: rongfengliang
+  last_updated_on: 2019-11-09 11:28:40.000000000 Z
+  vulnerabilities:
+  - name: Knex.js has a limited SQL injection vulnerability
+    cve_id: CVE-2016-20018
+    cve_url: https://github.com/advisories/GHSA-4jv9-3563-23j3
+    detected_date: Dec 21
+    severity: high
+    first_patched: 2.4.0
+- name: pg
+  description: PostgreSQL client - pure javascript &amp; libpq with the same API
+  package_url: https://www.npmjs.com/pg
+  version: 7.12.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16197/default_3d197518f6bb529bfcc1b685e2cefbdfe83ff108.png
+  detection_source_url: https://github.com/rongfengliang/plv8-require-learning/blob/master/node-plv8/yarn.lock
+  detection_source: node-plv8/package.json
+  last_updated_by: rongfengliang
+  last_updated_on: 2019-11-09 11:28:40.000000000 Z
+- name: shortid
+  description: Amazingly short non-sequential url-friendly unique id generator
+  package_url: https://www.npmjs.com/shortid
+  version: 2.2.15
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16368/default_92302d1bbf4c0f67b862869662b4f69002c94aad.png
+  detection_source_url: https://github.com/rongfengliang/plv8-require-learning/blob/master/node-plv8/yarn.lock
+  detection_source: node-plv8/package.json
+  last_updated_by: rongfengliang
+  last_updated_on: 2019-11-09 14:32:53.000000000 Z
+- name: uuid
+  description: RFC4122
+  package_url: https://www.npmjs.com/uuid
+  version: 3.3.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15916/default_e0a4fb1126d7400f419f0931cf1669947a5bc552.png
+  detection_source_url: https://github.com/rongfengliang/plv8-require-learning/blob/master/node-plv8/yarn.lock
+  detection_source: node-plv8/package.json
+  last_updated_by: rongfengliang
+  last_updated_on: 2019-11-09 11:28:40.000000000 Z
